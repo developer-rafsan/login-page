@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --BGcolor: #D7E1EB;
+    --BGbnt: #f8f8f8;
+    --bordercolor : rgba(141, 141, 141, 0.158);
+    --BGhover : linear-gradient(to right,rgb(81, 136, 255),rgb(4, 0, 255));
+}
+.dork-mode{
+    --BGcolor: #130f40;
+    --BGbnt: #f8f8f8;
+    --bordercolor : rgba(255, 255, 255, 0.466);
+    --BGhover : linear-gradient(to right,rgb(81, 136, 255),rgb(4, 0, 255));
+}
+
+
+
+
+
+
+
+.section{
+    background: var(--BGcolor);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+}
+.section .dark-mood{
+    background: var(--BGbnt);
+    margin: 3% auto;
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px var(--bordercolor);
+}
+.section .dark-mood .btn-lite,
+.section .dark-mood .btn-dark
+{
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    height: 100%;
+    border-radius: 30px;
+    width: 49%;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    z-index: 111;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.section .dark-mood .dark-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49%;
+    border-radius: 30px;
+    background-image: var(--BGhover) ;
+    height: 100%;
+    transition: .5s;
+}
+#btn-lite{
+    color: #f8f8f8;
+}
+
+.section .from-box{
+    background: #ffffff1e;
+    height: 380px;
+    width: 300px;
+    margin: 5% auto;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px var(--bordercolor);
+    overflow: hidden;
+}
+
+.section .form-btn{
+    background: #f8f8f8;
+    top: 6%;
+    margin: auto;
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 1px 1px 5px 1px var(--bordercolor);
+}
+.section .form-btn .login-form-btn,
+.section .form-btn .reg-form-btn
+{
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    height: 100%;
+    border-radius: 30px;
+    width: 49%;
+    cursor: pointer;
+    position: relative;
+    background: transparent;
+    z-index: 111;
+}
+#login-form-btn{
+    color: #FFF;
+}
+.section .form-btn .from-btn-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 49%;
+    border-radius: 30px;
+    background-image: var(--BGhover);
+    height: 100%;
+    transition: 1s;
+}
+.from-box .icons-box{
+    margin-top: 50px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.from-box .icons-box .fb-icons,
+.from-box .icons-box .tube-icons,
+.from-box .icons-box .ins-icons{
+    background-color: #FFF;
+    display: flex;
+    margin: auto 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px 1px var(--bordercolor);
+    position: relative;
+}
+.from-box .icons-box .fb-icons::after{
+    content: "Facebook";
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background-image: var(--BGhover);
+    position: absolute;
+    top: -40px;
+    box-shadow: 1px 1px 3px 2px rgba(3, 0, 0, 0.158);
+    display: none;
+    color: #FFF;
+}
+.from-box .icons-box .fb-icons:hover{
+    background-image: var(--BGhover);
+    color: #FFF;
+}
+.from-box .icons-box .fb-icons:hover::after{
+    display: block;
+}
+.from-box .icons-box .tube-icons::after{
+    content: "Youtube";
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    color: #FFF;
+    background-color: red;
+    top: -40px;
+    box-shadow: 1px 1px 3px 2px rgba(3, 0, 0, 0.158);
+    display: none;
+}
+.from-box .icons-box .tube-icons:hover{
+    background-color: red;
+    color: #FFF;
+}
+.from-box .icons-box .tube-icons:hover::after{
+    display: block;
+}
+.from-box .icons-box .ins-icons::after{
+    content: "Instagram";
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    position: absolute;
+    top: -40px;
+    background-color: rgb(20, 175, 0);
+    color: #f8f8f8;
+    box-shadow: 1px 1px 3px 2px rgba(3, 0, 0, 0.158);
+    display: none;
+}
+.from-box .icons-box .ins-icons:hover{
+    background-color: rgb(20, 175, 0);
+    color: #FFF;
+}
+
+.from-box .icons-box .ins-icons:hover::after{
+    display: block;
+}
+
+
+
+.input-group {
+    margin-top: 5%;
+    position: absolute;
+    transition: 1s;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input-group input{
+    font-size: 15px;
+    margin: 5px auto;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background-color: transparent;
+}
+.input-group button{
+    width: 70%;
+    height: 40px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 15%;
+    position: relative;
+    color: #000000;
+    cursor: pointer;
+    z-index: 2;
+    background: #FFF;
+    box-shadow: 1px 1px 5px 1px var(--bordercolor);
+}
+.input-group button::after{
+    content: "";
+    background-image: var(--BGhover);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    transition: .5s;
+    z-index: -1;
+}
+#regban{
+    margin-top: 0px;
+}
+.input-group button:hover{
+    color: #D7E1EB;
+}
+.input-group button:hover::after{
+    width: 100%;
+}
+#input-group-log{
+    left: 40px;
+}
+#input-group-reg{
+    left: 450px;
+}
